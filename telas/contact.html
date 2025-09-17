@@ -18,29 +18,59 @@
       display: flex;
       flex-direction: column;
     }
-    header {
-      background-color: #e84d57;
-      padding: 1rem 1.5rem;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    header .logo img {
-      height: 50px;
-    }
-    nav a {
-      color: white;
-      margin-left: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: opacity 0.3s ease;
-    }
-    nav a:hover, nav a:focus {
-      opacity: 0.8;
-      outline: none;
-    }
+/* -------- Header -------- */
+header {
+  background-color: #e84d57;
+  color: white;
+}
+
+header .header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  height: 56px;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+
+/* -------- Social Icons -------- */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+}
     main {
       flex: 1;
       max-width: 700px;
@@ -173,17 +203,32 @@
 <body>
 
   <header>
-    <a href="index.html" class="logo" aria-label="Team Cherry Home">
-      <img src="imagens/logo.png" alt="Team Cherry Logo" />
-    </a>
-    <nav aria-label="Primary navigation">
-      <a href="index.html">Blog</a>
-      <a href="games.html">Games</a>
-      <a href="merchandise.html">Merchandise</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-    </nav>
-  </header>
+        <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="Team Cherry Logo" style="filter: brightness(255);"/></a>
+        </div>
+        <nav>
+            <a href="index.html">Blog</a>
+            <a href="games.html">Games</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://x.com/TeamCherryGames" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X icon" />
+            </a>
+            <a href="https://www.youtube.com/user/teamcherrygames" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube icon" />
+            </a>
+            <a href="https://www.facebook.com/teamcherrygames" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook icon" />
+            </a>
+            <a href="https://bsky.app/profile/did:plc:njcr3moahtid7crxdjtu26jp" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bluesky_Social_butterfly_logo_icon.svg" alt="Bluesky icon" />
+            </a>
+        </div>
+        </div>
+    </header>
 
   <main>
     <h1>Contact Team Cherry</h1>
