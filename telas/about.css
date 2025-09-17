@@ -1,0 +1,231 @@
+/* -------- Reset & Base -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #cc4455;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------- Header -------- */
+header {
+  background-color: #e84d57;
+  color: white;
+}
+
+header .header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  height: 56px;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+
+/* -------- Social Icons -------- */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+}
+
+/* -------- Main (About Page) -------- */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* -------- About Section -------- */
+.about-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-logo img {
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.about-logo h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e84d57;
+  margin-bottom: 0.3rem;
+}
+
+.about-logo .subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.about-text {
+  margin-top: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* -------- Team Section -------- */
+.team-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e84d57;
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.member img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #e84d57;
+}
+
+.member h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.member p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* -------- Responsividade -------- */
+@media (max-width: 768px) {
+  .about-logo h1 {
+    font-size: 2rem;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* -------- Footer -------- */
+footer {
+  background-color: #eee;
+  padding: 2rem 1rem;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer nav a {
+  color: #cc4455;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+  color: #e84d57;
+}
